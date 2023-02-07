@@ -28,18 +28,16 @@
 
         <div class="card bg-light">
             <article class="card-body mx-auto" style="max-width: 400px;">
-                <form>
+                <form action="test.php" method="post">
                     <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                        </div>
-                        <input name="number" class="form-control" placeholder="Phone number" id="mobile" type="text" required>
+                        <input name="code" class="form-control" placeholder="#####" id="code" type="text" required>
                     </div> <!-- form-group// -->
-                    <button type="button" class="btn btn-primary" onclick="subFun()" id="subBtn">send</button>
-                    <div class="btn btn-primary" id="timer"></div>
-                </form>
-            </article>
-        </div> <!-- card.// -->
+                    <button type="submit" class="btn btn-primary" id="subBtn">submit</button>
+                    <button type="button" class="btn btn-primary" id="timer" onclick="resendCode()">120
+        </div>
+        </form>
+        </article>
+    </div> <!-- card.// -->
 
     </div>
     <!--container end.//-->
