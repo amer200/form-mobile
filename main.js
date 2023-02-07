@@ -40,7 +40,7 @@
 // }
 const timerBox = document.getElementById('timer');
 timerBox.disabled = true;
-let timer = 3;
+let timer = 120;
 setInterval(() => {
     if (timer <= 0) {
         clearInterval(this);
